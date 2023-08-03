@@ -1,0 +1,134 @@
+:host {
+    --gray-1: #F6F5F5;
+    --white: #F1F0F3;
+    --gray-2: #9ca4ad;
+    --dark: #0F161C;
+    --shadow-dark: #ebe5e6;
+    --lower-region-color: #F5f5f5;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    background-color: #f1e31b;
+}
+
+.container {
+    width: 400px;
+    height: 80vh;
+    border-radius: 20px;
+    box-shadow: 10 10 10 var(--shadow-dark);
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.upperReigon {
+    position: relative;
+    width: 400px;
+    height: 70%;
+    overflow: hidden;
+}
+
+.placeTemp {
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.location p:nth-child(1) {
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.location p:nth-child(2) {
+    font-size: 16px;
+    color: var(--gray-2);
+    font-weight: 800;
+}
+
+.weather-pic {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.image {
+    width: 15%;
+    align-self: center;
+}
+
+.weather-pic h1 {
+    font-size: 60px;
+}
+
+.weather-pic h2 {
+    color: #9ca4ad;
+}
+
+.background-pic {
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+
+.lowerRegion {
+    background-color: var(--lower-region-color);
+    width: 400px;
+    height: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-start;
+}
+
+.box {
+    margin: 10px;
+    background-color: white;
+    border-radius: 20px;
+    width: 40%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.infoName {
+    color: #98a6b0;
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0 0 5px 0;
+}
+
+.infoValue {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.icon {
+    width: 15%;
+    margin-right: 20px;
+}
+
+.icon img {
+    width: 100%;
+}
+
+.info {
+    width: 30%;
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
